@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fandom Hangman</title>
+
+	
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<h1 id="title" data-shadow="Fandom Hangman!" onclick="changeTheme()">Fandom Hangman!</h1>
+	</header>
+	<div class="mainContent">
+
+		<p id="pressKey" style="color:red;">Press any key to get started. Or click the title untill you find your fandom!</p>
+		
+		<div>
+			<h2>Current Word:</h2>
+			<h2 id="currentWord"></h2>
+		</div>	
+		
+		<div class="left">
+			<p>Guesses Remaining:</p>
+			<p id="guessesSpot"></p>
+		</div>
+		
+		<div class="right">
+			<p>Letters Guessed:</p>
+			<p id="lettersGuessed"></p>
+		</div>
+	</div>
+
+	<script src="assets/js/game.js"></script>
+	</body>
+
+</body>
+</html>
