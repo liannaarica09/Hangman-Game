@@ -1,4 +1,4 @@
-/* Animated Shadow */
+/* Animated Shadow by carpe numidium*/
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -64,7 +64,9 @@ p {
 	font-size: 24px;
 }
 
-.mainContent {
+#mainContent {
+	padding: 15px;
+	height:50%;
 	margin: 50px;
 }
 
