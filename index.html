@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css" charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Jim+Nightshade|Miss+Fajardose|Mr+Dafoe|Mrs+Saint+Delafield|Righteous|Roboto" rel="stylesheet">
 
 </head>
 
@@ -17,21 +18,25 @@
 	</header>
 	<div id="mainContent">
 
-		<p id="pressKey" style="color:red;">Press any key to get started. Or click the title untill you find your fandom!</p>
+		<p id="win" style="display:none">Win!</p>
+
+		<p id="lose" style="display:none;">Lose :(</p>	
+
+		<p class="text2" id="pressKey" style="color:red;">Press any key to get started. Or click the title untill you find your fandom!</p>
 		
 		<div>
-			<h2>Current Word:</h2>
+			<h2 class="text2">Current Word:</h2>
 			<h2 id="currentWord"></h2>
 		</div>	
 		
-		<div class="left">
+		<div class="left text2">
 			<p>Guesses Remaining:</p>
-			<p id="guessesSpot">6</p>
+			<p id="guessesSpot">8</p>
 		</div>
 		
-		<div class="right">
+		<div class="right text2">
 			<p>Letters Guessed:</p>
-			<p id="lettersGuessed"></p>
+			<p id="lettersGuessed" ></p>
 		</div>
 	
 	</div>

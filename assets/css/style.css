@@ -19,7 +19,7 @@ h1 {
   color: white;
   font-family: 'Righteous', serif;
   font-size: 12em; 
-  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  text-shadow: .03em .03em 0 #4d5eb3;
   }
   h1:after {
     content: attr(data-shadow);
@@ -49,11 +49,10 @@ h1 {
 
 /* Main CSS */  
 
-h1,
-h2,
-a,
-p {
-	font-family: 'Righteous', cursive;
+
+body{
+  max-width: 1200px;
+  margin:auto;
 }
 
 h2 {
@@ -61,13 +60,19 @@ h2 {
 }
 
 p {
-	font-size: 24px;
+	font-size: 150%;
 }
 
 #mainContent {
+  font-family: 'Righteous', cursive;
 	padding: 15px;
 	height:50%;
 	margin: 50px;
+  position: relative;
+}
+
+#currentWord {
+  letter-spacing: 3px;
 }
 
 #pressKey {
@@ -85,4 +90,17 @@ h2 {
 .right {
 	float:right;
 }
+
+#win,
+#lose {
+  z-index: 300;
+  font-size:6em;
+  position:absolute;
+  padding:80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 255, 1);
+}
+
 
