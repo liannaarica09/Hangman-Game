@@ -4,7 +4,7 @@ var starWars = ["X Wing", "Deathstar", "Luke Skywalker", "Rebel Alliance", "Rogu
 var starTrek = ["Enterprise", "James", "Tibberious", "Kirk", "Jean Luc", "Picard", "William Riker", "Data", "Deanna Troi", "Worf", "Hikaru Sulu", "Montgomery Scott", "Uhura", "Spock", "Vulcan", "Federation"];
 var harryPotter = ["Harry Potter", "Hermione Granger", "Ron Weasley", "PotterCast", "Diagon Alley", "Hogwarts", "Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw", "Dumbledore", "Remus Lupin", "Sirius Black", "Salazar", "Godric", "Helga", "Rowena", "Niffler", "Dementor", "Luna Lovegood", "Daily Prophet", "Quibbler", "Welsh Green", "Hungarian Horntail", "Norweigan Ridgeback", "Voldemort", "Death Eater", "Auror", "Nymphadora Tonks"];
 var lotr = ["Middle Earth", "Hobbit", "Hobbiton", "Bree", "Rivendell", "Rohon", "Edoras", "Gondor", "Dol Amroth", "Minas Tirith", "Minas Arnor", "Ithilien", "Treebeard", "Aragorn", "Boromir", "Faramir", "Frodo Baggins", "Bilbo Baggins", "Sam Gamgee", "Meridoc Brandybuck", "Perigrin Took", "Eomer", "Eowyn", "Legolas", "Gimli", "Ori", "Dori", "Nori", "Biffur", "Boffur", "Bonbor", "Oin", "Gloin", "Balin", "Dwalin", "Fili", "Kili", "Thorin Okenshild", "Gandolf"];
-var marvel = ["Tony Stark", "Iron Man", "Jame Rhodes", "Rhody", "War Machine", "Iron Patriot", "Pepper Potts", "Rescue", "Ho Yinsen", "Toni Ho", "Justin Hammer", "Captain American", "Union Jack", "Dum Dum Dugan", "Captain Britian", "Sadow Cat", "Black Knight", "Dane Whitman", "Pete Wisdom", "Captain Middland", "Spitfire", "Excalibur", "Alister Stewart", "Hellcat", "Hawkeye", "Clint Barton", "Black Widow", "Avengers", "Young Avengers", "Assgaurdian", "Hulkling", "Iron Lad", "Patriot", "Wiccan", "Stature", "Speed", "Scarlet Wich", "Quicksilver", "Victor Mancha", "American Chavez", "Marvel Boy", "Loki", "Thor", "Volstag", "Sif", "Happy Hogan", "Hogan the Grim", "Excelsior", "Stan Lee", "Jack Kirby", "Joe Simon", "Chris Claremont", "Defenders", "Dr Strange", "Sorceror Supream", "The Collector", "Agent Phil Coulson", "Galaga", "shwarma", "Maria Hill", "Daisy Johnson", "Quake", "Profesor X", "Hulk", "Bruce Banner", "Amadaus Cho", "Pattsy Walker", "Tippy Toe", "Steve Rogers", "Bucky", "James Buchanon Barnes", "Winter Soldier", "Peggy Carter", "Hella", "Merlin", "Jessica Jones", "Luke Cage", "Iron Fist", "Daredevil", "Spider Man", "Peter Parker", "Miles Morales", "Wolverine", "Pheonix", "Kitty Pride", "Iceman", "Blink", "Warpath", "Dani Moonstar", "Valkerie", "Prodgy", "Rogue", "Gambit", "Bullseye", "Thunderbird", "Magneto", "Mangog", "Galactus", "Black Panther", "Wakanda"];
+var marvel = ["Tony Stark", "Iron Man", "James Rhodes", "Rhody", "War Machine", "Iron Patriot", "Pepper Potts", "Rescue", "Ho Yinsen", "Toni Ho", "Justin Hammer", "Captain America", "Union Jack", "Dum Dum Dugan", "Captain Britian", "Sadow Cat", "Black Knight", "Dane Whitman", "Pete Wisdom", "Captain Middland", "Spitfire", "Excalibur", "Alister Stewart", "Hellcat", "Hawkeye", "Clint Barton", "Black Widow", "Avengers", "Young Avengers", "Assgaurdian", "Hulkling", "Iron Lad", "Patriot", "Wiccan", "Stature", "Speed", "Scarlet Wich", "Quicksilver", "Victor Mancha", "America Chavez", "Marvel Boy", "Loki", "Thor", "Volstag", "Sif", "Happy Hogan", "Hogan the Grim", "Excelsior", "Stan Lee", "Jack Kirby", "Joe Simon", "Chris Claremont", "Defenders", "Dr Strange", "Sorceror Supream", "The Collector", "Agent Phil Coulson", "Galaga", "shwarma", "Maria Hill", "Daisy Johnson", "Quake", "Profesor X", "Hulk", "Bruce Banner", "Amadaus Cho", "Pattsy Walker", "Tippy Toe", "Steve Rogers", "Bucky", "James Buchanon Barnes", "Winter Soldier", "Peggy Carter", "Hella", "Merlin", "Jessica Jones", "Luke Cage", "Iron Fist", "Daredevil", "Spider Man", "Peter Parker", "Miles Morales", "Wolverine", "Pheonix", "Kitty Pride", "Iceman", "Blink", "Warpath", "Dani Moonstar", "Valkerie", "Prodgy", "Rogue", "Gambit", "Bullseye", "Thunderbird", "Magneto", "Mangog", "Galactus", "Black Panther", "Wakanda"];
 var janeAusten = ["Emma", "Emma Woodhouse", "George Knighley", "John Knightley", "Isabella Knightley", "Pride and Prejeduce", "Elizabeth Bennet", "Kitty Bennet", "Jane Bennet", "Bingley", "Darcy", "Sense and Sensibility", "Lizzie Bennet Diaries", "Emma Aproved"];
 var hamilton = ["Alexender Hamilton", "George Washington", "Thomas Jeferson", "Aaron Burr", "Yorktown", "Virginia", "New York", "Eliza", "Angelica Schyler", "Philip", "Peggy", "Hurcules Muligan", "John Laurens", "Shot", "America", "imigrants", "write", "Lafayette"];
 var classicLit = ["Dracula", "Animal Farm", "Catcher in the Rye", "Shakespeare", "Much Ado About Nothing", "Hamlet", "McBeth", "Duncan", "Romeo and Juliet", "Troilus and Cressida", "Othello", "Julius Ceasar", "Pericles", "Tempest", "Taming of the Shrew", "Les Miserables", "Frankenstein", "Great Expectations", "The Scarlet Letter", "Ninteen Eighty Four", "Odesy", "Tom Sawyer", "Secret Garden", "Heart of Darkness", "Brave New World"];
@@ -118,7 +118,7 @@ function loseAlert() {
 
    	setTimeout( function() {
    		alert.style.display = "none";
-   		}, 1000);
+   		}, 4000);
 }
 
 
@@ -140,6 +140,10 @@ function winCheck() {
 //reset word, guesses, and letters
 function setUp() {
 	console.log("setUp triggered");
+	incorectGuesses = [];
+	wordPrint = [];
+	wordChoice = "";
+	wordSelect = "";
 	guessesLeft = 8;
 	console.log(guessesLeft);
 	document.getElementById("guessesSpot").innerHTML = guessesLeft;
@@ -147,8 +151,6 @@ function setUp() {
 	document.getElementById("currentWord").innerHTML = "";
 	console.log(document.getElementById("currentWord").innerHTML);
 	document.getElementById("lettersGuessed").innerHTML = "";
-	incorectGuesses = [];
-	wordPrint = [];
 	choseWord();
 }
 
