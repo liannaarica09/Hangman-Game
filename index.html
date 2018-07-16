@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Fandom Hangman</title>
 
-	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122455397-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-122455397-1');
+	</script>
+
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="assets/fonts/fonts.css" type="text/css" charset="utf-8" />
-	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Jim+Nightshade|Miss+Fajardose|Mr+Dafoe|Mrs+Saint+Delafield|Righteous|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Jim+Nightshade|Miss+Fajardose|Mr+Dafoe|Mrs+Saint+Delafield|Righteous|Roboto"
+	    rel="stylesheet">
 
 </head>
 
@@ -20,29 +36,46 @@
 
 		<p id="win" style="display:none">Win!</p>
 
-		<p id="lose" style="display:none;">Lose :(</p>	
+		<p id="lose" style="display:none;">Lose :(</p>
 
-		<p class="text2" id="pressKey" style="color:red;">Press any key to get started. Or click the title untill you find your fandom!</p>
-		
+		<div id="dropdown" style="display:none;">
+			<ul>
+				<li>Doctor Who</li>
+				<li>Star Wars</li>
+				<li>Star Trek</li>
+				<li>Harry Potter</li>
+				<li>Middle Earth</li>
+				<li>Marvel</li>
+				<li>Jane Austen</li>
+				<li>Hamilton: An American Musical</li>
+				<li>Clasic Literature</li>
+				<li>Nerdfighter</li>
+				<li>Disney</li>
+			</ul>
+		</div>
+
+		<p class="text2" id="pressKey">Press any key to get started. Or click the title untill you find your fandom!</p>
+
 		<div>
 			<h2 class="text2">Current Word:</h2>
 			<h2 id="currentWord"></h2>
-		</div>	
-		
+		</div>
+
 		<div class="left text2">
 			<p>Guesses Remaining:</p>
 			<p id="guessesSpot">8</p>
 		</div>
-		
+
 		<div class="right text2">
 			<p>Letters Guessed:</p>
-			<p id="lettersGuessed" ></p>
+			<p id="lettersGuessed"></p>
 		</div>
-	
+
 	</div>
 
 	<script src="assets/js/game.js"></script>
-	</body>
-
+	<!-- 	<script src="assets/js/hangmanQuery.js"></script>
+ -->
 </body>
+
 </html>
