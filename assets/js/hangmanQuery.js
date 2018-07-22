@@ -118,11 +118,14 @@ function winAlert() {
 
 
 function loseAlert() {
+	console.log("Lose aleart triggered. Word was " + wordChoice);
 	var alert = $("#lose");
-	alert.innerHTML = "Lose :( Word was " + wordChoice;
+	alert.html("Lose :( Word was " + wordChoice);
+	console.log(alert.html);
 	alert.show('fast');
 	setTimeout(function () {
 		alert.hide(1000);
+		setUp();
 	}, 4000);
 }
 
@@ -138,7 +141,6 @@ function winCheck() {
 	else if (guessesLeft === 0) {
 		console.log("lose");
 		loseAlert();
-		setUp();
 	}
 }
 

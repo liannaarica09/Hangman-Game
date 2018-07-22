@@ -11,7 +11,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 1vh;
 }
 
 body {
@@ -98,14 +98,14 @@ h2 {
 #win,
 #lose {
   z-index: 300;
-  font-size: 6em;
+  font-size: 5em;
+  padding: 1em;
   position: absolute;
-  padding: 80px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 255, 1);
-  width: 75%;
+  width: 100%;
 }
 
 /* dropdown */
@@ -116,6 +116,7 @@ h2 {
   padding: 16px;
   font-size: 16px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -126,7 +127,9 @@ h2 {
 
 .dropdown {
   position: relative;
+  left: -45%;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .dropdown-content {
