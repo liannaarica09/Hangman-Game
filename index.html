@@ -31,7 +31,7 @@
 
 <body>
 	<header>
-		<h1 id="title" data-shadow="Fandom Hangman!" onclick="changeTheme()">Fandom Hangman!</h1>
+		<h1 id="title" data-shadow="Fandom Hangman!">Fandom Hangman!</h1>
 	</header>
 	<div id="mainContent">
 
@@ -39,23 +39,46 @@
 
 		<p id="lose" style="display:none;">Lose :(</p>
 
-		<div id="dropdown" style="display:none;">
-			<ul>
-				<li>Doctor Who</li>
-				<li>Star Wars</li>
-				<li>Star Trek</li>
-				<li>Harry Potter</li>
-				<li>Middle Earth</li>
-				<li>Marvel</li>
-				<li>Jane Austen</li>
-				<li>Hamilton: An American Musical</li>
-				<li>Clasic Literature</li>
-				<li>Nerdfighter</li>
-				<li>Disney</li>
+		<div class="dropdown">
+			<div onclick="dropdownFunc()" class="dropbtn">Fandoms</div>
+			<ul id="myDropdown" class="dropdown-content">
+
+				<li data-list='["Fantastic", "Brilliant", "Geronimo", "Rose Tyler", "Mickey Smith", "Jackie Tyler", "Dalek", "Skaro", "Fantastic", "Sarah Jane", "Jack Harkness", "Torchwood", "TARDIS", "Ian", "Barbra", "Susan", "Polly"]'
+				    ; data-font="font-family: 'doctor_whoregular'; font-size: 12em; text-shadow: .03em .03em 0 #003b6f;" data-background="background: url(assets/images/doctor_who.jpg) no-repeat fixed center;">Doctor Who</li>
+
+				<li data-list='["X Wing", "Deathstar", "Luke Skywalker", "Rebel Alliance", "Rogue Squadron", "Leia Organa", "Han Solo", "Chewbacca", "Millennium Falcon", "Curuscant", "Tatooine", "Naboo", "Anakin Skywalker", "Yoda", "Obi Wan Kenobie", "Qui Gon Jinn", "Mace Windu", "lightsaber"]'
+				    data-font="font-family:'STARWARS'; font-size: 10em; margin-top:10px;" data-background="background: url(assets/images/xwing.jpg) no-repeat fixed center">Star Wars</li>
+
+				<li data-list='["Enterprise", "James", "Tibberious", "Kirk", "Jean Luc", "Picard", "William Riker", "Data", "Deanna Tori", "Worf", "Hikaru Sulu", "Montgomery Scott", "Uhura", "Spock", "Vulcan", "Federation"]'
+				    data-font="font-family: 'federationregular'; font-size: 12em" data-background="background: url(assets/images/enterprise.jpg) no-repeat fixed center">Star Trek</li>
+
+				<li data-list='["Harry Potter", "Hermione Granger", "Ron Weasley", "PotterCast", "Diagon Alley", "Hogwarts", "Gryffindor", "Hufflepuff", "Slytherin", "Ravenclaw", "Dumbledore", "Remus Lupin", "Sirius Black", "Salazar", "Godric", "Helga", "Rowena", "Niffler", "Dementor", "Luna Lovegood", "Daily Prophet", "Quibbler", "Welsh Green", "Hungarian Horntail", "Norwegian Ridgeback", "Voldemort", "Death Eater", "Auror", "Nymphadora Tonks"]'
+				    data-font="font-family: 'harry_pregular'; font-size: 12em; margin-top:15px;" data-background="background: url(assets/images/hogwarts.jpg) no-repeat fixed center">Harry Potter</li>
+
+				<li data-list='["Middle Earth", "Hobbit", "Hobbiton", "Bree", "Rivendell", "Rohan", "Edoras", "Gondor", "Dol Amroth", "Minas Tirith", "Minas Arnor", "Ithilien", "Treebeard", "Aragorn", "Boromir", "Faramir", "Frodo Baggins", "Bilbo Baggins", "Sam Gamgee", "Meridoc Brandybuck", "Perigrin Took", "Eomer", "Eowyn", "Legolas", "Gimli", "Ori", "Dori", "Nori", "Biffur", "Boffur", "Bonbor", "Oin", "Gloin", "Balin", "Dwalin", "Fili", "Kili", "Thorin Oakenshild", "Gandalf"]'
+				    data-font="font-family: 'ringbearermedium'; font-size: 10em; margin-top:15px" data-background="background: url(assets/images/HoweEowyn.jpg) no-repeat fixed center">Middle Earth</li>
+
+				<li data-list='["Tony Stark", "Iron Man", "James Rhodes", "Rhody", "War Machine", "Iron Patriot", "Pepper Potts", "Rescue", "Ho Yinsen", "Toni Ho", "Justin Hammer", "Captain America", "Union Jack", "Dum Dum Dugan", "Captain Britain", "Shadow Cat", "Black Knight", "Dane Whitman", "Pete Wisdom", "Captain Midlands", "Spitfire", "Excalibur", "Alister Stewart", "Hellcat", "Hawkeye", "Clint Barton", "Black Widow", "Avengers", "Young Avengers", "Asgardian", "Hulkling", "Iron Lad", "Patriot", "Wiccan", "Stature", "Speed", "Scarlet Witch", "Quicksilver", "Victor Mancha", "America Chavez", "Marvel Boy", "Loki", "Thor", "Volstag", "Sif", "Happy Hogan", "Hogan the Grim", "Excelsior", "Stan Lee", "Jack Kirby", "Joe Simon", "Chris Claremont", "Defenders", "Dr Strange", "Sorcerer Supreme", "The Collector", "Agent Phil Coulson", "Galaga", "shawarma", "Maria Hill", "Daisy Johnson", "Quake", "Professor X", "Hulk", "Bruce Banner", "Amadeus Cho", "Patsy Walker", "Tippy Toe", "Steve Rogers", "Bucky", "James Buchanan Barnes", "Winter Soldier", "Peggy Carter", "Hela", "Merlin", "Jessica Jones", "Luke Cage", "Iron Fist", "Daredevil", "Spider Man", "Peter Parker", "Miles Morales", "Wolverine", "Phoenix", "Kitty Pride", "Iceman", "Blink", "Warpath", "Dani Moonstar", "Valkyrie", "Prodigy", "Rogue", "Gambit", "Bullseye", "Thunderbird", "Magneto", "Mangog", "Galactus", "Black Panther", "Wakanda"]'
+				    data-font="font-family: 'avengeance_mightiest_avengeRg'; font-size: 12em" data-background="background: url(assets/images/marvel-civil-war.jpg) no-repeat fixed center;">Marvel</li>
+
+				<li data-list='["Emma", "Emma Woodhouse", "George Knightley", "John Knightley", "Isabella Knightley", "Pride and Prejudice", "Elizabeth Bennet", "Kitty Bennet", "Jane Bennet", "Bingley", "Darcy", "Sense and Sensibility", "Lizzie Bennet Diaries", "Emma Approved"]'
+				    data-font="font-family: 'Mr Dafoe', cursive; font-size: 12em" data-background="background: url(assets/images/janeAusten.jpg) no-repeat fixed center">Jane Austen</li>
+
+				<li data-list='["Alexander Hamilton", "George Washington", "Thomas Jefferson", "Aaron Burr", "Yorktown", "Virginia", "New York", "Eliza", "Angelica Schuyler", "Philip", "Peggy", "Hercules Mulligan", "John Laurens", "Shot", "America", "immigrants", "write", "Lafayette"]'
+				    data-font="color: black; font-family: Cinzel; font-weight: 700; font-size: 12em; text-shadow: none;" data-background="background: url(assets/images/hamilton.jpg) no-repeat fixed center">Hamilton</li>
+
+				<li data-list='["Dracula", "Animal Farm", "Catcher in the Rye", "Shakespeare", "Much Ado About Nothing", "Hamlet", "McBeth", "Duncan", "Romeo and Juliet", "Troilus and Cressida", "Othello", "Julius Caesar", "Pericles", "Tempest", "Taming of the Shrew", "Les Miserables", "Frankenstein", "Great Expectations", "The Scarlet Letter", "Nineteen Eighty Four", "Odyssey", "Tom Sawyer", "Secret Garden", "Heart of Darkness", "Brave New World"]'
+				    data-font="font-family: 'Jim Nightshade', cursive; font-size: 12em; margin-top:25px;" data-background="background: url(assets/images/trinityLibrary.jpg) no-repeat fixed center">Classic Literature</li>
+
+				<li data-list='["John Green", "World Suck", "Hank Green", "Nerd", "YouTube", "Dear Hank and John", "tuatara", "Turtles All the Way Down", "Paper Towns", "Looking for Alaska", "Hankler Fish", "spiral", "An Abundance of Kathrines", "An Absolutely Remarkable Thing", "Fault in Our Stars", "Ester Earl", "Hazel", "Aza Holmes", "Maureen Johnson"]'
+				    data-font="font-family: 'Roboto', sans-serif; font-size: 12em" data-background="background: url(assets/images/nerdfighter.jpg) no-repeat fixed center">Nerdfighter</li>
+
+				<li data-list='["Rapunzel", "Cinderella", "Aurora", "Sleeping Beauty", "Belle", "Lion King", "Simba", "Nala", "Tarzan", "Dalmatian", "Cruela Devill", "Maleficent", "Ariel", "Merida", "Brave", "Tangled", "Flynn Rider", "Woody", "Buzz Lightyear", "Incredibles", "Dumbo", "Snow White", "Mickey", "mouse", "Goofy", "Donald Duck", "Duck Tales", "Tiana", "Scar", "Prince Eric"]'
+				    data-font="font-family: 'Walt-Disney-Script-v41'; font-size: 12em" data-background="background: url(assets/images/cinderellaCastle.jpg) no-repeat fixed center">Disney</li>
 			</ul>
 		</div>
 
-		<p class="text2" id="pressKey">Press any key to get started. Or click the title untill you find your fandom!</p>
+		<p class="text2" id="pressKey">Press any key to get started. Or chose your fandom!</p>
 
 		<div>
 			<h2 class="text2">Current Word:</h2>
@@ -74,9 +97,8 @@
 
 	</div>
 
-	<script src="assets/js/game.js"></script>
-	<!-- 	<script src="assets/js/hangmanQuery.js"></script>
- -->
+	<script src="assets/js/hangmanQuery.js"></script>
+
 </body>
 
 </html>

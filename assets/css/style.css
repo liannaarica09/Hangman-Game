@@ -1,73 +1,76 @@
 /* Animated Shadow by carpe numidium*/
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  }
+}
 
-html, body {
+html,
+body {
   height: 100%;
-  }
-  body {
-    text-align: center;
-    background-color: hsla(230,40%,50%,1);
-    }
+}
+
+body {
+  text-align: center;
+  background-color: hsla(230, 40%, 50%, 1);
+}
 
 h1 {
   display: inline-block;
   color: white;
   font-family: 'Righteous', serif;
-  font-size: 12em; 
+  font-size: 12em;
   text-shadow: .03em .03em 0 #4d5eb3;
-  }
-  h1:after {
-    content: attr(data-shadow);
-    position: absolute;
-    top: .06em; left: .06em;
-    z-index: -1;
-    text-shadow: none;
-    background-image:
-      linear-gradient(
-        45deg,
-        transparent 45%,
-        hsla(48,20%,90%,1) 45%,
-        hsla(48,20%,90%,1) 55%,
-        transparent 0
-        );
-    background-size: .05em .05em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  
-    animation: shad-anim 15s linear infinite;
-    }
+}
+
+h1:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: .06em;
+  left: .06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient( 45deg, transparent 45%, hsla(48, 20%, 90%, 1) 45%, hsla(48, 20%, 90%, 1) 55%, transparent 0);
+  background-size: .05em .05em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 15s linear infinite;
+}
 
 @keyframes shad-anim {
-  0% {background-position: 0 0}
-  0% {background-position: 100% -100%}
+  0% {
+    background-position: 0 0
   }
+  0% {
+    background-position: 100% -100%
+  }
+}
 
-/* Main CSS */  
+/* Main CSS */
 
-
-body{
+body {
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
 }
 
 h2 {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 p {
-	font-size: 150%;
+  font-size: 150%;
 }
 
 #mainContent {
   font-family: 'Righteous', cursive;
-	padding: 15px;
-	height:50%;
-	margin: 50px;
+  padding: 15px;
+  height: 50%;
+  margin: 50px;
   position: relative;
 }
 
@@ -76,33 +79,76 @@ p {
 }
 
 #pressKey {
-	margin:15px;
-  color:red;
+  margin: 15px;
+  color: red;
 }
 
 h2 {
-	padding: 20px;
+  padding: 20px;
 }
 
 .left {
-	float:left;
+  float: left;
 }
 
 .right {
-	float:right;
+  float: right;
 }
 
 #win,
 #lose {
   z-index: 300;
-  font-size:6em;
-  position:absolute;
-  padding:80px;
+  font-size: 6em;
+  position: absolute;
+  padding: 80px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 255, 1);
-  width:75%;
+  width: 75%;
 }
 
+/* dropdown */
 
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd
+}
+
+.show {
+  display: block;
+}
