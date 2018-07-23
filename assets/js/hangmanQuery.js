@@ -1,4 +1,4 @@
-var words = ["scifi", "fan fiction", "tumblr", "cosplay", "podcast", "comic book", "super hero", "steampunk", "DC Comics", "trading cards", "collectable", "action figure"];
+var words = ["SciFi", "fan fiction", "Tumblr", "cosplay", "podcast", "comic book", "super hero", "steampunk", "DC Comics", "trading cards", "collectable", "action figure"];
 
 var wordPrint = [];
 var guessesLeft = 8;
@@ -78,8 +78,9 @@ function guessRepeat(currentLetter) {
 
 	if (incorectGuesses.indexOf(currentLetter) == -1) {
 		incorectGuesses.push(currentLetter);
+		console.log(currentLetter);
 		console.log(incorectGuesses);
-		$("#lettersGuessed").html(+ currentLetter);
+		$("#lettersGuessed").append(currentLetter);
 		guessesLeft--;
 		$("#guessesSpot").html(guessesLeft);
 	}
@@ -125,14 +126,11 @@ function loseAlert() {
 	alert.show('fast');
 	setTimeout(function () {
 		alert.hide(1000);
-		setUp();
 	}, 4000);
 }
 
 function winCheck() {
 	console.log("winCheck triggered");
-	console.log(wordSelect);
-	console.log($("#currentWord").html());
 	if (wordSelect === $("#currentWord").html()) {
 		console.log("win");
 		winAlert();
@@ -141,6 +139,7 @@ function winCheck() {
 	else if (guessesLeft === 0) {
 		console.log("lose");
 		loseAlert();
+		setUp();
 	}
 }
 
@@ -152,19 +151,19 @@ function setUp() {
 	wordSelect = "";
 	guessesLeft = 8;
 	console.log(guessesLeft);
-	$("#guessesSpot").innerHTML = guessesLeft;
+	$("#guessesSpot").html(guessesLeft);
 	console.log(guessesLeft);
-	$("#currentWord").innerHTML = "";
-	console.log(document.getElementById("currentWord").innerHTML);
-	$("#lettersGuessed").innerHTML = "";
+	$("#currentWord").html("");
+	console.log($("#currentWord").html);
+	$("#lettersGuessed").html("");
 	choseWord();
 }
 
 document.onkeyup = function (event) {
 	var letterChoice = event.key;
 
-	if ($("#pressKey").css("color", "red")) {
-		$("#pressKey").css("color", "blue");
+	if ($("#pressKey").css("display", "block")) {
+		$("#pressKey").css("display", "none");
 	}
 
 	console.log(letterChoice);
@@ -174,16 +173,27 @@ document.onkeyup = function (event) {
 
 $("li").on("click", function () {
 	title = $(this).text() + " Hangman!";
+	$("#title").attr("style", "");
+	$("body").attr("style", "");
+
 	$("#title").html(title);
 	$("#title").attr("data-shadow", title);
-	$("#title").attr("style", $(this).attr("data-font"));
-
-	$("body").attr("style", $(this).attr("data-background"));
-	$("#mainContent").attr("style", $(this).attr("data-box"));
+	$("#title").css(JSON.parse($(this).attr("data-title")));
+	$("body").css(JSON.parse($(this).attr("data-body")));
+	console.log(JSON.parse($(this).attr("data-box")));
+	$("#mainContent").css(JSON.parse($(this).attr("data-box")));
 
 	console.log(JSON.parse($(this).attr("data-list")));
 	words = JSON.parse($(this).attr("data-list"));
 	console.log(words);
+
+	if ($(this).text() == "Disney") {
+		$("#title").attr("data-shadow", "");
+	}
+	if ($(this).text() == "Harry Potter") {
+		$("#currentWord").attr("style", "font-family: 'Cinzel';");
+		$("#guessesSpot").attr("style", "font-family: 'Cinzel';")
+	}
 
 	setUp();
 });

@@ -20,6 +20,8 @@ body {
 }
 
 h1 {
+  position: relative;
+  top: -60px;
   display: inline-block;
   color: white;
   font-family: 'Righteous', serif;
@@ -69,8 +71,7 @@ p {
 #mainContent {
   font-family: 'Righteous', cursive;
   padding: 15px;
-  height: 50%;
-  margin: 50px;
+  margin: 0px 50px;
   position: relative;
 }
 
@@ -87,31 +88,36 @@ h2 {
   padding: 20px;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 #win,
 #lose {
   z-index: 300;
   font-size: 5em;
   padding: 1em;
   position: absolute;
-  top: 50%;
+  top: -25%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 255, 1);
-  width: 100%;
+  width: 80%;
+}
+
+#gridThing {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#left {
+  grid-column-start: 1;
+}
+
+#right {
+  grid-column-start: 3;
 }
 
 /* dropdown */
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: rgba(52, 152, 219, .5);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -126,10 +132,10 @@ h2 {
 }
 
 .dropdown {
+  z-index: 3000;
   position: relative;
-  left: -45%;
-  display: inline-block;
-  margin-top: 10px;
+  float: left;
+  margin: 10px;
 }
 
 .dropdown-content {
@@ -149,7 +155,8 @@ h2 {
 }
 
 .dropdown-content li:hover {
-  background-color: #ddd
+  background-color: #ddd;
+  cursor: pointer;
 }
 
 .show {
